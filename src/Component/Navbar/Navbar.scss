@@ -1,0 +1,95 @@
+@mixin flex($direction) {
+    display: flex;
+    flex-direction: $direction;
+  }
+  nav {
+    position: fixed;
+    @include flex(row);
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    width: 100vw;
+    padding: 15px 0;
+    background-color: white;
+    z-index: 2;
+    .navbar-logo {
+      width: 210px;
+      margin: 0;
+      padding-left: 6.5vw;
+      cursor: pointer;
+    }
+    .navbar-menu {
+      @include flex(row);
+      align-items: center;
+      gap: 3.5vw;
+      margin: 0;
+      padding-right: 6vw;
+    }
+    ul li {
+      cursor: pointer;
+      margin: 0;
+      list-style: none;
+      color: #000;
+      text-align: center;
+      font-family: "Red Hat Display", sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-decoration: none;
+      &:hover {
+        color: #0282af;
+      }
+    }
+  }
+  .hamburgur-icon {
+    cursor: pointer;
+    padding-right: 5vw;
+    font-size: 180%;
+  }
+  .close-icon {
+    cursor: pointer;
+    padding-right: 5vw;
+    font-size: 180%;
+    z-index: 999;
+  }
+  .hamgurgur-menu {
+    position: fixed;
+    height: 100vh;
+    width: 60vw;
+    background-color: white;
+    display: flex;
+    margin: 0;
+    left: 30vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    gap: 40px;
+    li {
+      list-style: none;
+      cursor: pointer;
+      margin: 0;
+      list-style: none;
+      color: #000;
+      text-align: center;
+      font-family: "Red Hat Display", sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-decoration: none;
+      &:hover {
+        color: #0282af;
+      }
+    }
+  }
+  .layout {
+    position: fixed;
+    width: 97vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.513);
+    z-index: 2;
+  }
+  
+  

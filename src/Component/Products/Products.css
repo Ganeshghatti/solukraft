@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap");
+.products {
+  width: 98vw;
+  height: 100vh;
+  background-image: url("../../Images/Products_bg.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media (max-width: 700px) {
+  .products {
+    height: auto;
+  }
+}
+.products .products-first-row {
+  width: 98vw;
+  height: 45vh;
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 700px) {
+  .products .products-first-row {
+    height: auto;
+    flex-direction: column;
+  }
+}
+.products .products-first-row .products-first-row-left {
+  width: 48vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+@media (max-width: 700px) {
+  .products .products-first-row .products-first-row-left {
+    width: 98vw;
+    padding: 20px 0;
+  }
+}
+.products .products-first-row .products-first-row-left .products-first-row-left-text {
+  color: #000;
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 1.28px;
+  padding: 0 150px;
+  margin: 0;
+}
+@media (max-width: 700px) {
+  .products .products-first-row .products-first-row-left .products-first-row-left-text {
+    font-size: 30px;
+    padding: 0 75px;
+  }
+}
+.products .products-first-row .products-first-row-left .products-first-row-left-button {
+  border-radius: 0px 20px 0px 0px;
+  background: linear-gradient(180deg, #0083af 0%, #00c37c 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  width: 180px;
+  padding: 5px 0;
+  cursor: pointer;
+}
+.products .products-first-row .products-first-row-left .products-first-row-left-button:hover {
+  font-size: 23px;
+  width: 200px;
+  padding: 5px 0;
+}
+.products .products-first-row .products-first-row-right {
+  width: 48vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px 10vw;
+  flex-wrap: wrap;
+}
+@media (max-width: 900px) {
+  .products .products-first-row .products-first-row-right {
+    gap: 0 5vw;
+  }
+}
+@media (max-width: 700px) {
+  .products .products-first-row .products-first-row-right {
+    width: 98vw;
+  }
+}
+.products .products-first-row .products-first-row-right .Products-first-row-right-card {
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 700px) {
+  .products .products-first-row .products-first-row-right .Products-first-row-right-card {
+    width: 35vw;
+  }
+}
+.products .products-first-row .products-first-row-right .Products-first-row-right-card .products-first-row-right-img {
+  margin: 0;
+  width: 55%;
+  cursor: pointer;
+}
+.products .products-first-row .products-first-row-right .Products-first-row-right-card .products-first-row-right-img:hover {
+  width: 65%;
+}
+@media (max-width: 700px) {
+  .products .products-first-row .products-first-row-right .Products-first-row-right-card .products-first-row-right-img {
+    width: 50%;
+  }
+}
+.products .products-first-row .products-first-row-right .Products-first-row-right-card .products-first-row-right-text {
+  color: #000;
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 100%;
+  margin: 0;
+}
+@media (max-width: 500px) {
+  .products .products-first-row .products-first-row-right .Products-first-row-right-card .products-first-row-right-text {
+    font-size: 12px;
+    width: 75%;
+  }
+}
+.products .products-second-row {
+  width: 98vw;
+  height: 45vh;
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 700px) {
+  .products .products-second-row {
+    height: auto;
+    flex-direction: column-reverse;
+  }
+}
+.products .products-second-row .products-second-row-left {
+  width: 48vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px 10vw;
+  flex-wrap: wrap;
+}
+@media (max-width: 900px) {
+  .products .products-second-row .products-second-row-left {
+    gap: 0 5vw;
+  }
+}
+@media (max-width: 700px) {
+  .products .products-second-row .products-second-row-left {
+    width: 98vw;
+  }
+}
+.products .products-second-row .products-second-row-left .Products-second-row-left-card {
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 700px) {
+  .products .products-second-row .products-second-row-left .Products-second-row-left-card {
+    width: 35vw;
+  }
+}
+.products .products-second-row .products-second-row-left .Products-second-row-left-card .products-second-row-left-img {
+  margin: 0;
+  width: 55%;
+  cursor: pointer;
+}
+.products .products-second-row .products-second-row-left .Products-second-row-left-card .products-second-row-left-img:hover {
+  width: 65%;
+}
+@media (max-width: 700px) {
+  .products .products-second-row .products-second-row-left .Products-second-row-left-card .products-second-row-left-img {
+    width: 50%;
+  }
+}
+.products .products-second-row .products-second-row-left .Products-second-row-left-card .products-second-row-left-text {
+  color: #000;
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 100%;
+  margin: 0;
+}
+@media (max-width: 500px) {
+  .products .products-second-row .products-second-row-left .Products-second-row-left-card .products-second-row-left-text {
+    font-size: 12px;
+    width: 75%;
+  }
+}
+.products .products-second-row .products-second-row-right {
+  width: 48vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+@media (max-width: 700px) {
+  .products .products-second-row .products-second-row-right {
+    width: 98vw;
+    padding: 20px 0;
+  }
+}
+.products .products-second-row .products-second-row-right .products-second-row-right-text {
+  color: #000;
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 1.28px;
+  padding: 0 10vw;
+  margin: 0;
+}
+@media (max-width: 700px) {
+  .products .products-second-row .products-second-row-right .products-second-row-right-text {
+    font-size: 30px;
+    padding: 0 75px;
+  }
+}
+.products .products-second-row .products-second-row-right .products-second-row-right-button {
+  border-radius: 0px 20px 0px 0px;
+  background: linear-gradient(180deg, #0083af 0%, #00c37c 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  width: 180px;
+  padding: 5px 0;
+  cursor: pointer;
+}
+.products .products-second-row .products-second-row-right .products-second-row-right-button:hover {
+  font-size: 23px;
+  width: 200px;
+  padding: 5px 0;
+}/*# sourceMappingURL=Products.css.map */

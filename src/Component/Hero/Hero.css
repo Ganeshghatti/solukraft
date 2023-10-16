@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap");
+.hero-section {
+  width: 98vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+@media (min-width: 900px) {
+  .hero-section {
+    background-image: url("../../Images/Landing_Page.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media (max-width: 900px) {
+  .hero-section {
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .hero-section {
+    gap: 50px;
+  }
+}
+.hero-section .hero-caption {
+  color: #000;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: "Roboto", sans-serif;
+  font-size: 53px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 127.188%;
+  letter-spacing: 1.28px;
+  margin: 0 0 0 80px;
+  width: 35vw;
+}
+@media (max-width: 900px) {
+  .hero-section .hero-caption {
+    margin: 0;
+    text-align: center;
+    width: 80vw;
+    font-size: 30px;
+  }
+}
+.hero-section .hero-caption .blue_color {
+  color: #0282af;
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 127.188%;
+  letter-spacing: 1.28px;
+  margin: 0;
+}
+@media (max-width: 900px) {
+  .hero-section .hero-caption .blue_color {
+    font-size: 30px;
+  }
+}
+.hero-section .hero-know-more {
+  border-radius: 0px 20px 0px 0px;
+  background: linear-gradient(180deg, #0083af 0%, #00c37c 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  margin: 0 0 0 80px;
+  width: 150px;
+  cursor: pointer;
+  padding: 5px;
+}
+.hero-section .hero-know-more:hover {
+  font-size: 23px;
+  width: 170px;
+  padding: 5px 0;
+}
+@media (max-width: 900px) {
+  .hero-section .hero-know-more {
+    margin: 0;
+  }
+}
+
+.Landing_page_design {
+  margin: 0 0 0 0;
+  width: 75%;
+}
+@media (max-width: 500px) {
+  .Landing_page_design {
+    width: 90%;
+  }
+}
+
+body {
+  margin: 0;
+}/*# sourceMappingURL=Hero.css.map */

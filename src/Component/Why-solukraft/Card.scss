@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800&display=swap");
+@mixin flex($direction) {
+  display: flex;
+  flex-direction: $direction;
+}
+.card {
+  width: 220px;
+  @include flex(column);
+  align-items: center;
+  margin: 0;
+  .why-solukaft-card-title {
+    margin: 0;
+    color: #000;
+    text-align: center;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    &:hover {
+      color: #0282af;
+    }
+  }
+  .why-solukaft-card-description {
+    margin: 0;
+    color: #000;
+    text-align: center;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    &:hover {
+      color: #0282af;
+    }
+  }
+  img {
+    width: 40%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+    cursor:pointer;
+    margin: 0;
+    &:hover {
+      width: 45%;
+    }
+  }
+}

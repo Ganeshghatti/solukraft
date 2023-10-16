@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap");
+
+@mixin flex($direction) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+.career {
+  @include flex(column);
+  @media (max-width: 900px) {
+    height: auto;
+  }
+  .career-hero {
+    @include flex(column);
+    width: 100vw;
+    .career-nav {
+      width: 100vw;
+      position: fixed;
+      background-color: white;
+      height: 10vh;
+    }
+    .career-nav {
+      height: 10vh;
+      @include flex(row);
+      align-items: center;
+      color: #000;
+      text-align: center;
+      font-family: "Red Hat Display", sans-serif;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    p {
+      cursor: pointer;
+      color: #000;
+      margin: 0 0 0 30px;
+      &:hover {
+        color: #003b9e;
+      }
+    }
+
+    .career-content-div {
+      background-image: url("../../Images/careerbg.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100vw;
+      height: 90vh;
+      margin: 10vh 0 0 0;
+      @include flex(column);
+      justify-content: flex-start;
+      gap: 20px;
+      @media (max-width: 1300px) {
+        background: none;
+        height: auto;
+      }
+      .career-content-div-heading {
+        color: #000;
+        text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        font-family: "Roboto", sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 127.188%;
+        letter-spacing: 0.96px;
+        margin: 5vh 10vw 0 10vw;
+        @media (max-width: 900px) {
+          font-size: 20px;
+          margin: 5vh 5vw 0 5vw;
+        }
+        .career-content-text-blue {
+          color: #003b9e;
+          font-family: "Roboto", sans-serif;
+          font-size: 40px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 127.188%;
+          letter-spacing: 0.96px;
+          @media (max-width: 900px) {
+            font-size: 20px;
+          }
+        }
+      }
+      .career-content-div-description {
+        color: #000;
+        text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        font-family: "Roboto", sans-serif;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 127.188%;
+        letter-spacing: 0.56px;
+        margin: 0 10vw 0 10vw;
+        @media (max-width: 900px) {
+          font-size: 15px;
+          margin: 0 5vw 0 5vw;
+        }
+      }
+      .career-content-div-button {
+        border-radius: 0px 20px 0px 0px;
+        border: 0px solid #000;
+        background: linear-gradient(180deg, #0083af 0%, #00c37c 100%);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        color: #fff;
+        font-family: "Roboto", sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.8px;
+        margin: 0 0 0 10vw;
+        width: 150px;
+        cursor: pointer;
+        padding: 5px;
+        @media (max-width: 900px) {
+          margin: 0 5vw 0 5vw;
+        }
+        &:hover {
+          font-size: 23px;
+          width: 170px;
+          padding: 5px 0;
+        }
+      }
+    }
+  }
+  .career-phone-img-div {
+    width: 100vw;
+    .career-phone-img {
+      width: 100%;
+      margin: 0;
+    }
+  }
+  .career-noopening-div {
+    height: 50vh;
+    width: 100vw;
+    @include flex(row);
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 900px) {
+      height: 30vh;
+    }
+    .career-noopening-text {
+      margin: 0;
+      color: #000;
+      text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      font-family: "Roboto", sans-serif;
+      font-size: 34px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 127.188%;
+      letter-spacing: 0.96px;
+      @media (max-width: 900px) {
+        font-size: 26px;
+      }
+    }
+  }
+
+  .career-footer {
+    margin: 0;
+  }
+}
